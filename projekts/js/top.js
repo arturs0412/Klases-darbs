@@ -1,3 +1,4 @@
+
 //no URL iegūst vārdu un ievieto to virsrakstā
 let adrese = window.location.hash;
 adrese = decodeURI(adrese);
@@ -18,40 +19,25 @@ async function iegutDatusNoApi(url)
   let datiJson = await datiNoServera.json();
 }
 
-async function atlasiTop();
+async function atlasitTop();
 {
   iegutDatusNoApi('url-mainīgā vērtība');
   let topsJson = await iegutDatusNoApi('topData');
   console.log(datiJson);
-
+  
   for (i=0; i < topsJson.length; i++)
   {
-    let tabula = document.querySelector("tops");
+    let tabula = document.querySelector(".tops");
 
     tabula.innerHTML = tabula.innerHTML+`
-    <tr id="`+ topsJson[i]['id']+`">
-      <td> `topsJson[i]['vards']+ `</td>
-      <td> `topsJson[i]['klikski']+ `</td>
-      <td> `topsJson[i]['laiks']+ `</td>
-      <td> `topsJson[i]['datums']+ `</td>
-    
-    </tr>` ;
+    <tr id="`+topsJson[i]['id']+`">
+      <td> `topsJson[i]['vards']+` </td>
+      <td> `topsJson[i]['klikski']+` </td>
+      <td> `topsJson[i]['laiks']+` </td>
+      <td> `topsJson[i]['datums']+` </td>
+    </tr>`;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function pievienotTop() {
