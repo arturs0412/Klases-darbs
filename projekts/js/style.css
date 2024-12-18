@@ -1,0 +1,56 @@
+/* Izveletā palete: https://www.color-hex.com/color-palette/1053633*/
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: 	#dde6f2;
+}
+
+body {
+    background-color: 	#4a5b6d;
+}
+
+h1 {
+    color: 	#a1b5c9;
+    font-weight: bold;
+}
+h2, h3, h4, h5, h6 {
+    color: #7289a7;
+}
+
+label {
+    font-weight: bold;
+    color: #a1b5c9;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    background-color: #a1b5c9;
+    border: 2px solid #7289a7;
+}
+
+button {
+    background-color: #5d768f;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    color: #0000;
+}
+
+button:hover {
+    background-color: 	#a1b5c9;
+}
+
+
+th {
+    font-weight: bold;
+    color: #a1b5c9;
+}
+
+td {
+    color: #a1b5c9;
+}
+
+.average-temperature {
+    font-style: italic;
+    color: #a1b5c9;
+}

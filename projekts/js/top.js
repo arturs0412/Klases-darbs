@@ -1,4 +1,3 @@
-
 //no URL iegūst vārdu un ievieto to virsrakstā
 let adrese = window.location.hash;
 adrese = decodeURI(adrese);
